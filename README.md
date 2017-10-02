@@ -1,5 +1,8 @@
 # An example of Docker multi-stage building with Golang
 
+![Itwars multi-stage building Docker](docker-multistage-build-HD.jpg)
+
+
 ## Introduction
 
 This repository is part of my blog post on [Docker multistage builds](http://www.it-wars.com/posts/virtualisation/docker-multi-stage-builds/).
