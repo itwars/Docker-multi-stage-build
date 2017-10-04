@@ -1,7 +1,6 @@
 # Docker builder for Golang
-FROM golang as builder
+FROM golang
 LABEL maintainer "Vincent RABAH <vincent.rabah@gmail.com>"
-
 
 WORKDIR ${GOPATH}/src/github.com/user/app
 COPY . .
@@ -14,5 +13,5 @@ FROM scratch
 LABEL maintainer "Vincent RABAH <vincent.rabah@gmail.com>"
 
 WORKDIR /root/
-COPY --from=builder ${GOPATH}/src/github.com/user/app .
+COPY --from=0 ${GOPATH}/src/github.com/user/app .
 CMD ["./app"]  
